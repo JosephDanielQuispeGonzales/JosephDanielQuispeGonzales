@@ -150,7 +150,7 @@ footer{text-align:center;padding:36px 16px 44px;color:var(--muted);font-size:.88
       <a class="btn" href="#cv">Ver CV</a>
     </div>
     <div class="ph">
-      <img id="foto" src="Imagen1.png" alt="Foto de Joseph Daniel Quispe Gonzales">
+      <img id="foto" src="https://raw.githubusercontent.com/josephdanielquispegonzales/JosephDanielQuispeGonzales/main/Imagen1.png" alt="Foto de Joseph Daniel Quispe Gonzales">
       <div class="bd a">Soporte técnico</div><div class="bd b">Ofimática</div>
     </div>
   </div>
@@ -158,7 +158,7 @@ footer{text-align:center;padding:36px 16px 44px;color:var(--muted);font-size:.88
 <div class="stats">
   <div class="st rv"><b class="grad" id="n1" data-n="0">0</b><span>cursos y seminarios</span></div>
   <div class="st rv"><b class="grad" id="n2" data-n="0">0</b><span>horas de capacitación</span></div>
-  <div class="st rv"><b class="grad" data-n="2">0</b><span>experiencias laborales</span></div>
+  <div class="st rv"><b class="grad" id="n2">0</b><span>experiencias laborales</span></div>
 </div>
 
 <main>
@@ -286,7 +286,7 @@ var els=[].slice.call(document.querySelectorAll('.rv,.h,[data-n]'));
 if('IntersectionObserver' in window){
   var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target.dataset.n)count(e.target);io.unobserve(e.target)}})},{threshold:.15});
   els.forEach(function(el){io.observe(el)});
-}else{els.forEach(function(el){el.classList.add('in');if(el.dataset.n)el.textContent=el.dataset.n})}
+}else{els.forEach(function(el){el.classList.add('in');if(e.target.dataset.n)el.textContent=el.dataset.n})}
 
 /* menú activo, barra de progreso y botón subir */
 var links=[].slice.call(document.querySelectorAll('.links a')),secs=links.map(function(a){return document.querySelector(a.getAttribute('href'))});
